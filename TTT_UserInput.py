@@ -9,12 +9,14 @@ def f_take_tic(playerx, lGame):
 
     if (iX < 0 or iY < 0) or (iX > 2 or iY > 2) or lGame[iX][iY] != '-':
         print ('values out of boundaries')
-    if playerx == 1:
-        lGame[iX][iY] = 'x'
-        playerx = 2
-    elif playerx == 2:
-        lGame[iX][iY] = 'o'
-        playerx = 1
+        f_take_tic(playerx, lGame)
+    else:
+        if playerx == 1:
+            lGame[iX][iY] = 'x'
+            playerx = 2
+        elif playerx == 2:
+            lGame[iX][iY] = 'o'
+            playerx = 1
 
     return (lGame)
 

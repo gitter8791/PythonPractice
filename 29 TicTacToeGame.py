@@ -19,7 +19,6 @@ def main():
             playerx = 1
         f_draw_board(lGame)
 
-
     f_draw_board(lGame)
 
 if __name__ == '__main__':
