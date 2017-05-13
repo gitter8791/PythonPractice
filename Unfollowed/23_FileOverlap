@@ -1,0 +1,42 @@
+'''Given two .txt files that have lists of numbers in them, find the numbers that are overlapping'''
+
+'''
+lstPrime = []
+lstHappy = []
+lstOverlap = []
+
+with open('happynumbers.txt', 'r') as open_file:
+    for single_line in open_file.readlines():
+        lstHappy.append(single_line.strip())
+
+print (lstHappy)
+
+with open('primenumbers.txt', 'r') as open_file:
+    for single_line in open_file.readlines():
+        lstPrime.append(single_line.strip())
+
+print (lstPrime)
+
+for i in lstPrime:
+    if i in lstHappy:
+        lstOverlap.append(i)
+print(lstOverlap)
+
+'''
+
+lstPrime = []
+lstHappy = []
+lstOverlap = []
+
+with open('happynumbers.txt', 'r') as vX:
+    for line in vX:
+        lstHappy.append(line.strip())
+print(lstHappy)
+
+with open('primenumbers.txt', 'r') as vX:
+    for line in vX:
+        lstPrime.append(int(line.strip()))
+print(lstPrime)
+
+lstOverlap.append(vX for vX in lstHappy if vX in lstPrime)
+print(lstOverlap)

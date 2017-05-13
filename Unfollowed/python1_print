@@ -1,0 +1,18 @@
+int1 = 1
+str1 = 'yks'
+
+print (int1)
+print([int1])
+print(type(int1))
+
+print (str1)
+print([str1])
+print(type(str1))
+
+print ('tyyppi i: ', type(i)) #<class 'str'>
+print ('tyyppi [i]: ', type([i])) #<class 'list'>
+print('tyyppi (i): ', type((i))) #<class 'list'>
+print ('int i: ', int(i)) #7
+print ('i:', i)
+print('type(int(i)): ',type(int(i))) #<class 'int'>
+print(i, vPin_hard[i])
